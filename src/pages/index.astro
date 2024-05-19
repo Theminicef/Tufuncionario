@@ -1,0 +1,427 @@
+---
+import Nav from "../components/Nav.astro";
+import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/global.css';
+import Footer from "../components/Footer.astro";
+
+
+const { currentPath } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="TF.svg" type="image/x-icon">
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Document</title>
+	</head>
+	<body>
+		<Nav currentPath={currentPath} />
+		<!-- Hero Section -->
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Bienvenido a Tu Funcionario</h1>
+        <p class="lead text-muted">Tu fuente principal de información sobre Oposiciones.</p>
+    </div>
+</section>
+
+<!-- Important News Carousel -->
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-md-9">
+            <div id="importantNewsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/soledad.jpg" class="d-block w-100" alt="Noticia 1" style="height: 300px; object-fit: cover;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Noticia Importante 1</h5>
+                            <p>Descripción de la noticia importante 1.</p>
+                            <a href="/blog/noticia-importante-1" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/soledad.jpg" class="d-block w-100" alt="Noticia 2" style="height: 300px; object-fit: cover;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Noticia Importante 2</h5>
+                            <p>Descripción de la noticia importante 2.</p>
+                            <a href="/blog/noticia-importante-2" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/soledad.jpg" class="d-block w-100" alt="Noticia 3" style="height: 300px; object-fit: cover;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Noticia Importante 3</h5>
+                            <p>Descripción de la noticia importante 3.</p>
+                            <a href="/blog/noticia-importante-3" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#importantNewsCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#importantNewsCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black;"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <h3>Categorías</h3>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="/blog/salarios-de-funcionarios">Salarios de Funcionarios</a></li>
+                <li class="list-group-item"><a href="/blog/preparar-oposiciones">Preparar Oposiciones</a></li>
+                <li class="list-group-item"><a href="/blog/libros-recomendados">Libros Recomendados</a></li>
+                <li class="list-group-item"><a href="/blog/convocatorias">Convocatorias</a></li>
+                <li class="list-group-item"><a href="/blog/experiencias">Experiencias</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Articles Section -->
+<div class="container mb-5">
+    <h2 class="text-center mb-4">Artículos Recientes</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <a href="/blog/salarios-de-funcionarios/articulo-1">
+                    <img src="/soledad.jpg" class="card-img-top" alt="Artículo 1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Artículo 1</h5>
+                    <p class="card-text">Resumen del artículo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="/blog/salarios-de-funcionarios/articulo-1" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <a href="/blog/salarios-de-funcionarios/articulo-2">
+                    <img src="/soledad.jpg" class="card-img-top" alt="Artículo 2">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Artículo 2</h5>
+                    <p class="card-text">Resumen del artículo 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="/blog/salarios-de-funcionarios/articulo-2" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <a href="/blog/salarios-de-funcionarios/articulo-3">
+                    <img src="/soledad.jpg" class="card-img-top" alt="Artículo 3">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Artículo 3</h5>
+                    <p class="card-text">Resumen del artículo 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="/blog/salarios-de-funcionarios/articulo-3" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="my-5">
+
+<!--- CAtwgorias -->
+
+<section class="container categorias mb-5">
+    <h2 class="text-center mb-4">Explora Nuestras Categorías</h2>
+    <p class="text-center lead mb-5">Descubre información relevante y actualizada sobre salarios de funcionarios y cómo preparar tus oposiciones.</p>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <h3 class="text-primary mb-3">Salarios</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <a href="/blog/salarios-de-funcionarios/francia">
+                            <img src="/soledad.jpg" class="card-img-top" alt="Salarios en Francia" loading="lazy"> 
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Francia</h5>
+                            <p class="card-text">¿Cuánto ganan los funcionarios en Francia? Descúbrelo aquí.</p>
+                            <a href="/blog/salarios-de-funcionarios/francia" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <a href="/blog/salarios-de-funcionarios/francia">
+                            <img src="/soledad.jpg" class="card-img-top" alt="Salarios en Francia" loading="lazy"> 
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Francia</h5>
+                            <p class="card-text">¿Cuánto ganan los funcionarios en Francia? Descúbrelo aquí.</p>
+                            <a href="/blog/salarios-de-funcionarios/francia" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <a href="/blog/salarios-de-funcionarios/francia">
+                            <img src="/soledad.jpg" class="card-img-top" alt="Salarios en Francia" loading="lazy"> 
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Francia</h5>
+                            <p class="card-text">¿Cuánto ganan los funcionarios en Francia? Descúbrelo aquí.</p>
+                            <a href="/blog/salarios-de-funcionarios/francia" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <h3 class="text-primary mb-3">Oposiciones</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <a href="/blog/Oposiciones/Oposiciones para trabajar en correos">
+                                <img src="/soledad.jpg" class="card-img-top" alt="Salarios en Francia" loading="lazy"> 
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Oposiciones para Correos</h5>
+                                <p class="card-text">¿Cuánto ganan los funcionarios en Francia? Descúbrelo aquí.</p>
+                                <a href="/blog/Oposiciones/Oposiciones para AGE" class="btn btn-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <a href="/blog/Oposiciones/Oposiciones para cartero">
+                                <img src="/soledad.jpg" class="card-img-top" alt="Salarios en Francia" loading="lazy"> 
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Francia</h5>
+                                <p class="card-text">¿Cuánto ganan los funcionarios en Francia? Descúbrelo aquí.</p>
+                                <a href="/blog/salarios-de-funcionarios/francia" class="btn btn-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <a href="/blog/salarios-de-funcionarios/francia">
+                                <img src="/soledad.jpg" class="card-img-top" alt="Salarios en Francia" loading="lazy"> 
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Francia</h5>
+                                <p class="card-text">¿Cuánto ganan los funcionarios en Francia? Descúbrelo aquí.</p>
+                                <a href="/blog/salarios-de-funcionarios/francia" class="btn btn-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+        </div>
+
+
+
+        <!-- Section de Prepara tus oposiciones -->
+        <div class="row">
+        <div class="col-md-6 mb-4">
+            <h3 class="text-primary mb-3">Formacion</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <a href="/blog/preparar-oposiciones/correos">
+                            <img src="/soledad.jpg" class="card-img-top" alt="Oposiciones de Correos" loading="lazy">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Correos</h5>
+                            <p class="card-text">Consejos y recursos para aprobar tus oposiciones de Correos.</p>
+                            <a href="/blog/preparar-oposiciones/correos" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <a href="/blog/preparar-oposiciones/correos">
+                            <img src="/soledad.jpg" class="card-img-top" alt="Oposiciones de Correos" loading="lazy">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Correos</h5>
+                            <p class="card-text">Consejos y recursos para aprobar tus oposiciones de Correos.</p>
+                            <a href="/blog/preparar-oposiciones/correos" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <a href="/blog/preparar-oposiciones/correos">
+                            <img src="/soledad.jpg" class="card-img-top" alt="Oposiciones de Correos" loading="lazy">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Correos</h5>
+                            <p class="card-text">Consejos y recursos para aprobar tus oposiciones de Correos.</p>
+                            <a href="/blog/preparar-oposiciones/correos" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>                    
+                </div> 
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <h3 class="text-primary mb-3">Convocatorias</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <a href="/blog/preparar-oposiciones/correos">
+                                <img src="/soledad.jpg" class="card-img-top" alt="Oposiciones de Correos" loading="lazy">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Correos</h5>
+                                <p class="card-text">Consejos y recursos para aprobar tus oposiciones de Correos.</p>
+                                <a href="/blog/preparar-oposiciones/correos" class="btn btn-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <a href="/blog/preparar-oposiciones/correos">
+                                <img src="/soledad.jpg" class="card-img-top" alt="Oposiciones de Correos" loading="lazy">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Correos</h5>
+                                <p class="card-text">Consejos y recursos para aprobar tus oposiciones de Correos.</p>
+                                <a href="/blog/preparar-oposiciones/correos" class="btn btn-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <a href="/blog/preparar-oposiciones/correos">
+                                <img src="/soledad.jpg" class="card-img-top" alt="Oposiciones de Correos" loading="lazy">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Correos</h5>
+                                <p class="card-text">Consejos y recursos para aprobar tus oposiciones de Correos.</p>
+                                <a href="/blog/preparar-oposiciones/correos" class="btn btn-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>  
+                </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <h3 class="text-primary mb-3">Carrera</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <a href="/blog/preparar-oposiciones/correos">
+                            <img src="/soledad.jpg" class="card-img-top" alt="Oposiciones de Correos" loading="lazy">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Correos</h5>
+                            <p class="card-text">Consejos y recursos para aprobar tus oposiciones de Correos.</p>
+                            <a href="/blog/preparar-oposiciones/correos" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <a href="/blog/preparar-oposiciones/correos">
+                            <img src="/soledad.jpg" class="card-img-top" alt="Oposiciones de Correos" loading="lazy">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Correos</h5>
+                            <p class="card-text">Consejos y recursos para aprobar tus oposiciones de Correos.</p>
+                            <a href="/blog/preparar-oposiciones/correos" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <a href="/blog/preparar-oposiciones/correos">
+                            <img src="/soledad.jpg" class="card-img-top" alt="Oposiciones de Correos" loading="lazy">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Correos</h5>
+                            <p class="card-text">Consejos y recursos para aprobar tus oposiciones de Correos.</p>
+                            <a href="/blog/preparar-oposiciones/correos" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>                    
+                </div> 
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <h3 class="text-primary mb-3">Noticias</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <a href="/blog/preparar-oposiciones/correos">
+                                <img src="/soledad.jpg" class="card-img-top" alt="Oposiciones de Correos" loading="lazy">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Correos</h5>
+                                <p class="card-text">Consejos y recursos para aprobar tus oposiciones de Correos.</p>
+                                <a href="/blog/preparar-oposiciones/correos" class="btn btn-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <a href="/blog/preparar-oposiciones/correos">
+                                <img src="/soledad.jpg" class="card-img-top" alt="Oposiciones de Correos" loading="lazy">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Correos</h5>
+                                <p class="card-text">Consejos y recursos para aprobar tus oposiciones de Correos.</p>
+                                <a href="/blog/preparar-oposiciones/correos" class="btn btn-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <a href="/blog/preparar-oposiciones/correos">
+                                <img src="/soledad.jpg" class="card-img-top" alt="Oposiciones de Correos" loading="lazy">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Correos</h5>
+                                <p class="card-text">Consejos y recursos para aprobar tus oposiciones de Correos.</p>
+                                <a href="/blog/preparar-oposiciones/correos" class="btn btn-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>  
+                </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+
+
+   <div class="row d-flex justify-content-center align-items-center mb-5"> <!-- Añadir clase de utilidad mb-5 para el margen inferior -->
+    <div class="col-md-6">
+        <div class="card">
+            <div class="text-center">
+                <img src="https://i.imgur.com/Dh7U4bp.png" width="200">
+                <span class="d-block mt-3">Subscribete a nuestra Neswletter para estar siempre informado de<br> contenido exclusivo para miembros.</span>
+                <div class="mx-5">
+                   <div class="input-group mb-3 mt-4">
+                       <input type="text" class="form-control" placeholder="Correo Electronico" aria-label="Recipient's username" aria-describedby="button-addon2">
+                       <button class="btn btn-dark border-rad" type="button" id="button-addon2">Suscribirme</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+        <Footer />
+		
+	</body>
+</html>

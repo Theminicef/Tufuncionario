@@ -1,0 +1,19 @@
+---
+import Nav from "../components/Nav.astro";
+
+const currentPath = '/Oposiciones/';
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Oposiciones</title>
+    </head>
+    <body>
+        <Nav {currentPath} />
+        <h1>Oposiciones</h1>
+        <p>Contenido de la página de Oposiciones.</p>
+    </body>
+</html>
