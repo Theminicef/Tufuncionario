@@ -6,7 +6,7 @@
   package = "netlify-plugin-one"
 
 [build.environment]
-  BRANCH = "main"            # Especifica la rama del repositorio que se utilizará para el despliegue
+  BRANCH = "main"          
 
 [backend]
   name = "git-gateway"       # Nombre del backend que utilizarás para gestionar el contenido
