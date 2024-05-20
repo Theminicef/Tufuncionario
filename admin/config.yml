@@ -20,3 +20,51 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Content", name: "body", widget: "markdown" }
+  - name: "oposiciones_sevilla"
+    label: "Oposiciones Sevilla"
+    folder: "src/pages/oposiciones/sevilla"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
+  - name: "oposiciones_madrid"
+    label: "Oposiciones Madrid"
+    folder: "src/pages/oposiciones/madrid"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
+  - name: "salarios"
+    label: "Salarios"
+    folder: "src/pages/blog/salarios"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
+  - name: "preparar_oposiciones"
+    label: "Preparar Oposiciones"
+    folder: "src/pages/blog/preparar-oposiciones"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
+  - name: "libros_recomendados"
+    label: "Libros Recomendados"
+    folder: "src/pages/blog/libros-recomendados"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
+  - name: "convocatorias"
+    label: "Convocatorias"
+    folder: "src/pages/blog/convocatorias"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }

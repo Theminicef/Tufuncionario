@@ -1,19 +1,20 @@
 ---
 import Nav from "../components/Nav.astro";
 const Portada = "/TF.svg"; 
-const currentPath = '/Oposiciones/';
+
+const currentPath = '/Sobrenosotros/';
 ---
 
-<html lang="es"> 
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <link rel="shortcut icon" href={Portada} type="image/x-icon"> 
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>Oposiciones</title>
+        <title>Sobre nosotros</title>
     </head>
     <body>
-        <Nav currentPath={currentPath} /> 
+        <Nav {currentPath} />
         <h1>Oposiciones</h1>
         <p>Contenido de la página de Oposiciones.</p>
     </body>

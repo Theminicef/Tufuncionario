@@ -1,16 +1,19 @@
 ---
 import Nav from "../components/Nav.astro"
+const Portada = "/TF.svg"; 
+const currentPath = '/Blog/';
 ---
 
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <link rel="shortcut icon" href={Portada} type="image/x-icon"> 
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <title>Blog</title>
     </head>
     <body>
-        <Nav/>
+        <Nav {currentPath} />
         
     </body>
 </html>

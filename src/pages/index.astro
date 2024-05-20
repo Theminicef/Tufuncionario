@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/global.css';
 import Footer from "../components/Footer.astro";
 
+const currentPath = '/';
 
-const { currentPath } = Astro.props;
 ---
 
 <html lang="en">
@@ -14,7 +14,7 @@ const { currentPath } = Astro.props;
 		<link rel="shortcut icon" href="TF.svg" type="image/x-icon">
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Document</title>
+		<title>Tu funcionario</title>
 	</head>
 	<body>
 		<Nav currentPath={currentPath} />
