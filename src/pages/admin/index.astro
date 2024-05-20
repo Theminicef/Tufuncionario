@@ -1,0 +1,27 @@
+---
+import Nav from "../../components/Nav.astro";
+import '../../styles/global.css';
+import Footer from "../../components/Footer.astro";
+
+const currentPath = '/admin/';
+
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/TF.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <Nav currentPath={currentPath} />
+
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Acceso al Panel de Administración (Decap CMS)</h1>
+    </div>
+
+    <Footer />
+  </body>
+</html>

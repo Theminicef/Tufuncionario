@@ -11,4 +11,4 @@
 [backend]
   name = "git-gateway"       # Nombre del backend que utilizarás para gestionar el contenido
 
-repo = "https://github.com/Theminicef/Tufuncionario.git"  # URL de tu repositorio de Git
+repo = "https://github.com/Theminicef/Tufuncionario.git" 
